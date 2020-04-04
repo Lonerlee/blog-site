@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Blog Site</title>
-    <link rel="stylesheet" type="text/css" href="main_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <nav id="nav-bar">
-        <a class="nav-item" href="#main-header">item</a>
-        <a class="nav-item" href="#article-section">item</a>
-        <a class="nav-item" href="#footer">item</a>
+        <a href="#main-header"><div id="logo"></div></a>
+        <div id="nav-items">
+            <a class="nav-item" href="#main-header">Header</a>
+            <a class="nav-item" href="#article-section">Articles</a>
+            <a class="nav-item" href="#footer-section">Page End</a>
+        </div>
     </nav>
     <main id="main-content">
-        <section id="main-header"><h1>Header</h1></section>
+        <section id="main-header"><h1>Hello Stranger!</h1></section>
         <section id="article-section">
             <article class="blog-post"></article>
             <article class="blog-post"></article>
             <article class="blog-post"></article>
         </section>
-        <section id="footer-section"></section>
+        <footer id="footer-section">Jen O’Brien · CBC Life · Background Image</footer>
     </main>
 </body>
 </html>

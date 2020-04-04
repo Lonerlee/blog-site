@@ -1,0 +1,75 @@
+:root {
+    --dark1: #743332;
+    --dark2: #667C86;
+    --normal: #CF565D;
+    --light1: #D8898B;
+    --light2: #F1F1ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: var(--dark2);
+}
+
+h1 {
+    padding-top: 20vh;
+    font-size: 10vh;
+    text-shadow: 0 0 10px var(--light1);
+    color: black;
+}
+
+#main-header {
+    background-image: url(style-images/fall-foliage.jpg);
+    background-size: 100% 56vw;
+    height: 56vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    color: var(--light1);
+    text-decoration: none;
+    font-size: 3vh;
+    margin: 1.5vh;
+}
+
+a:hover {
+    color: var(--light2);
+}
+
+#nav-bar {
+    background-color: var(--dark1);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2vh;
+}
+
+#logo {
+    background-image: url(style-images/r-rothbardian.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 15vh;
+    margin: 1.5vh;
+    position: absolute;
+}
+
+#logo:hover {
+    background-image: url(style-images/r-rothbardian-hover.png);
+}
