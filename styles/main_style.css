@@ -1,6 +1,7 @@
 :root {
     --dark1: #743332;
     --dark2: #667C86;
+    --dark3: #561312;
     --normal: #CF565D;
     --light1: #D8898B;
     --light2: #F1F1ED;
@@ -16,88 +17,16 @@ body {
     background-color: var(--dark2);
 }
 
-h1 {
-    padding-top: 20vh;
-    font-size: 10vh;
-    text-shadow: 0 0 10px var(--light1);
-    color: black;
-}
-
-#main-header {
-    background-image: url(style-images/fall-foliage.jpg);
-    background-size: 100% 56vw;
-    height: 56vw;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item {
-    color: var(--light1);
-    text-decoration: none;
-    font-size: 3vh;
-    margin: 1.5vh;
-}
-
 a:hover {
     color: var(--light2);
 }
 
-#nav-bar {
-    background-color: var(--dark1);
-    width: 100%;
-    display: flex;
-    position: fixed;
-    top: 0;
-}
+@media only screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
 
-#nav-items {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 2vh;
-}
-
-#logo {
-    background-image: url(style-images/r-rothbardian.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 15vh;
-    margin: 1.5vh;
-    position: absolute;
-}
-
-#logo:hover {
-    background-image: url(style-images/r-rothbardian-hover.png);
-}
-
-#article-section {
-    display: inline-grid;
-    grid-gap: 3.3vw;
-    margin: 0.7vw;
-    grid-template-columns: 30vw 30vw 30vw;
-}
-
-.blog-post {
-    min-height: 200px;
-    background-color: var(--normal);
-    border: 0.2vw var(--light1) solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.blog-top-image {
-    width: 10vw;
-    border-radius: 20%;
-    margin: 2px;
-    border: 2px var(--dark1) solid;
-}
-
-.blog-top-image:hover {
-    cursor: pointer;
-    border: 2px var(--light2) solid;
+    #top-gap {
+        height: 2px;
+    }
 }

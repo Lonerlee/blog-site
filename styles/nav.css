@@ -1,0 +1,56 @@
+.nav-item {
+    color: var(--light1);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 1.5vh;
+}
+
+#nav-bar {
+    background-color: var(--dark1);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2vh;
+}
+
+#logo {
+    background-image: url(style-images/r-rothbardian.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 15vh;
+    margin: 1.5vh;
+    position: absolute;
+}
+
+#logo:hover {
+    background-image: url(style-images/r-rothbardian-hover.png);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-item {
+        font-size: 15px;
+    }
+
+    #logo {
+        position: relative;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .nav-item {
+        font-size: 20px;
+    }
+}

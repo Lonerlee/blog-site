@@ -1,0 +1,22 @@
+#footer-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark1);
+    color: var(--light2);
+    justify-content: space-evenly;
+}
+
+#footer-section p {
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--dark3);
+}
+
+#footer-section a {
+    text-decoration: none;
+    color: var(--normal);
+}
+
+#footer-section a:hover {
+    color: var(--light1);
+}
