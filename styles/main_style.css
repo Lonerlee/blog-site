@@ -7,6 +7,11 @@
     --light2: #F1F1ED;
 }
 
+#top-gap {
+    height: 35px;
+    margin-top: 7vh;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +20,7 @@
 
 body {
     background-color: var(--dark2);
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -22,11 +28,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px){
-    body {
-        overflow-x: hidden;
-    }
 
     #top-gap {
         height: 2px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #top-gap {
+        height: 30px;
     }
 }
